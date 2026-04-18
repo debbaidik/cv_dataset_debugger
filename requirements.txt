@@ -1,0 +1,32 @@
+# CV Dataset Debugger — Dependencies
+# ==================================
+#
+# IMPORTANT: torch and torchvision must match your CUDA version.
+# Do NOT install them from this file. Instead, use the official
+# PyTorch installer: https://pytorch.org/get-started/locally/
+#
+# Example (CUDA 12.1):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+# After installing torch manually, install the rest:
+#   pip install -r requirements.txt
+
+# ── Core numeric stack ────────────────────────────────────────
+numpy>=1.24.0
+scipy>=1.10.0
+
+# ── Image loading & corruption injection (Phase 0) ───────────
+Pillow>=9.5.0
+
+# ── ML / classification (Phases 2–5) ─────────────────────────
+scikit-learn>=1.2.0
+
+# ── Approximate nearest neighbours (Phase 2, large datasets) ─
+faiss-cpu>=1.7.4
+
+# ── Confident Learning (Phase 4) ─────────────────────────────
+cleanlab>=2.5.0
+
+# ── Visualization (PR curves, notebooks) ─────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
