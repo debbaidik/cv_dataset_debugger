@@ -1,4 +1,4 @@
-# CV Dataset Debugger — Dependencies
+# CV Dataset Debugger - Dependencies
 # ==================================
 #
 # IMPORTANT: torch and torchvision must match your CUDA version.
